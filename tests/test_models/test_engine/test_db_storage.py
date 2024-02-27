@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 """
-C
-ontains the TestDBStorageDocs and TestDBStorage classes
+Contains the TestDBStorageDocs and TestDBStorage classes
 """
 
 from datetime import datetime
@@ -114,4 +113,3 @@ class TestFileStorage(unittest.TestCase):
         storage.save()
         c = storage.count()
         self.assertEqual(len(storage.all()), c)
-
